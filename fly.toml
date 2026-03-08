@@ -1,8 +1,3 @@
-# fly.toml app configuration file generated for worldmonitor-rxd--g on 2026-03-08T17:11:34Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
 app = 'worldmonitor-rxd--g'
 primary_region = 'ams'
 
@@ -17,7 +12,6 @@ primary_region = 'ams'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 256
+  cpu_kind = 'performance'
+  cpus = 8
+  memory_mb = 30720
